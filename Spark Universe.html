@@ -1,0 +1,403 @@
+<!-- spark_universe_showcase_7698/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>火花宇宙 | SPARK Universe</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.loli.net/css?family=Noto+Sans+SC:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <!-- 导航栏 -->
+  <nav class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-90 backdrop-blur-md z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">SPARK</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-item text-blue-300 hover:text-white transition duration-300">首页</a>
+          <a href="#about" class="nav-item text-blue-300 hover:text-white transition duration-300">关于</a>
+          <a href="#archive" class="nav-item text-blue-300 hover:text-white transition duration-300">联盟档案</a>
+          <a href="#upcoming" class="nav-item text-blue-300 hover:text-white transition duration-300">新作预告</a>
+          <a href="#contact" class="nav-item text-blue-300 hover:text-white transition duration-300">关于我们</a>
+        </div>
+        <div class="flex items-center">
+          <button class="md:hidden text-xl focus:outline-none">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 首页 -->
+  <section id="home" class="section min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-gray-900 opacity=80"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+        火花宇宙
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        探索星际文明，见证宇宙奇迹
+      </p>
+      <div class="flex justify-center">
+        <div class="scroll-down-arrow animate-pulse cursor-pointer" id="scroll-down-arrow"></div>
+      </div>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="section">
+    <div class="section-top-decoration"></div>
+    <div class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-300 section-title">关于火花宇宙</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="text-container">
+          <h3 class="text-2xl font-bold mb-4 text-purple-400">我们的使命</h3>
+          <p class="mb-4">火花宇宙是一个致力于塑造并成长为新一代科幻IP的全新世界观</p>
+          <p class="mb-4">从波及全球的战争到联盟内的各种大事件，我们将致力于为您呈现联盟最全面、客观的社会面貌与大事件</p>
+          <p>加入我们，一起探索宇宙的无限可能。</p>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-2xl">
+          <img src="https://img.picui.cn/free/2025/05/23/683088814da6b.jpg" alt="火花宇宙.jpg" title="火花宇宙.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 联盟档案馆 -->
+  <section id="archive" class="section">
+    <div class="section-top-decoration"></div>
+    <div class="container mx-auto px-4 flex flex-col md:flex-row">
+      <div class="w-full md:w-3/5 pr-0 md:pr-8">
+        <h2 class="text-4xl font-bold text-center mb-12 text-blue-300 section-title">联盟档案馆</h2>
+        <div class="archive-container">
+          <!-- 大事件分类 -->
+          <div class="archive-category">
+            <div class="archive-category-header" data-category="events">
+              <div class="archive-category-title">大事件</div>
+              <div class="archive-category-icon">▼</div>
+            </div>
+            <div class="archive-category-content">
+              <div class="archive-item" data-item="first-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">国际解放战争</h3>
+                <p class="mb-4">因为各方势力的欲求不满以及国际革命浪潮高涨而引起的世界范围内联邦国与国际共产联盟的全面大战，全球87%的国家都参与了这场战争，战争持续了14年，得益于各国（联邦国）内部人民自发性爆发的社会主义革命，这场战争并未演变为最坏的结果，不过其虽并未演变成全面核战争的形式，但据联盟战后的的调查统计，这场战争还是几乎摧毁了全球55%的工业设施，吞噬了近15亿人的性命（包括在战争过程中因其他非战争原因死亡的），导致至少40亿人流离失所，使得无数文物古迹遭到破坏，90%的高等院校遭到无差别攻击被摧毁或损毁，经济损失高达3千亿联盟点，直接促成了战后联盟的建立与战后政治清算的进行。</p>
+              </div>
+              <div class="archive-item" data-item="second-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">议会暴乱</h3>
+                <p class="mb-4">联盟历70年时发生的丑闻，由于Ubh元素的横空出世，引来了各方势力的争抢，无论是支持或是反对环境复兴计划的执律者、联盟议会的派阀、联盟内的名门望族都希望通过获得制造Ubh的技术来提高自己的地位，于是在明争暗斗下引发了议会暴乱，好在UCI基金会的及时插足，联合各方年轻势力一举制止了旧派阀，虽然环境复兴计划仍然逃不过下马的命运，并且UCI也因此从此走上了被秘密通缉的道路，但这也让Ubh能够被更公正的使用。</p>
+              </div>
+              <div class="archive-item" data-item="third-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">燎原革命</h3>
+                <p>由于贪官污吏常年的压迫，人民的怒火最终集中在联盟历95年爆发了，人们在愤怒中冲入了位于日内瓦的联合政府总部，各地的抗议者也纷纷加入了这场以抗议为主要手段的“革命”，最终此事以联盟议会议长辞职，联盟开始加大力度整治贪官而告一段落，不过貌似这场革命也给联盟带来了更为悲痛的事情</p>
+
+              </div>
+              <div class="archive-item" data-item="second-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">执律之殇</h3>
+                <p class="mb-4">联盟历95年末，那是联盟最危险的时刻，由于军费的连年削减，裁军的逐步进行，反叛的苗头开始涌现，加之新老议长换届，燎原革命的爆发，联盟对贪官的整治开始逐渐提上日程，不少曾经以贪污军费为生的军官纷纷反叛，期初还只是一小股叛军，直到无数反叛者组成了代号‘邪手’的组织，使得联合军事委员会的镇压显得苍白无力，到最后邪手愈发壮大，联盟甚至一度到了无兵可用的地步，即使是执律庭的特别行动小组也被派上了前线，这一鲁莽的举动致使至少3位执律者惨遭暗杀，这也是为什么如今任何关于执律者的信息都已消失或隐藏起来的原因，此外由于最初的执律庭对于执律者的年龄没有任何限制，这也使得不少当时上了年纪的执律者在联盟动荡之际的舟车劳顿中病逝，虽然最终联盟通过斩首的方式于联盟历98年终结了反叛，但这次叛乱的影响还是造成了不小的损失，甚至还有不少负隅顽抗的反叛者仍然躲在暗处，想要东山再起推翻联盟，在此之后便再也没有议员敢提削减军费的事了，至于原因嘛，随便编一个就好，执律之殇这个词反正是不能再提的。</p>
+              </div>
+              <div class="archive-item" data-item="third-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">7.21爆炸案</h3>
+                <p>联盟官员口中几乎未造成伤亡的爆炸案件，说是爆炸案实则更像是由食物中毒导致的连锁效应所造成的惨案，可席卷了大半个城市郊区贫民区的爆炸与大火到底有没有隐情只有那些戴着面具的议员的死不瞑目的调查员们知道了。</p>
+
+              </div>
+              <div class="archive-item" data-item="second-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">耶路撒冷主权争议</h3>
+                <p class="mb-4">自联盟建立伊始民族与民族之间的纷争便不曾停止，其中最为著名的便是耶路撒冷主权争议了，作为三教圣地，宗教在这里的争斗最主要出现在伊斯兰教与基督教之间，至于这里的基督教到底是不是全部由基督教徒组成就不得而知了，总之两股势力的交锋从有历史记录的联盟历3年持续到现在，在这个过程中除了长久以来法庭上的辩驳与当地的辩论外，也不乏一些暴力事件的发生，其中最为著称的莫过于号称是‘再东征’的暴力冲突了，根据第三方机构统计认定此次事件至少导致17人死亡104人重伤，2098人受不同程度的轻伤，即便在联盟军队的干预与镇压下暴乱很快就结束了，但这也是相当惨烈的数字了，如今大多数有关耶路撒冷的剩余案件基本都是关于这件事的家属申诉了，不过好在两方的争议最终在耶路撒冷建立行政区后消解</p>
+              </div>
+              <div class="archive-item" data-item="third-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">再东征</h3>
+                <p>由于联盟建立之初曾把耶路撒冷划分给当时实际控制着耶路撒冷城的伊斯兰区，导致后来由犹太人怂恿的基督教会对耶路撒冷发起了所谓的“再东征”，这应该是有历史记录以来的第六次十字军东征了，也是自文艺复兴以来的首次，令人惊叹的倒不仅是人们竟对教会依旧有着这么强的信仰，毕竟此前人类已经经历过一次有史以来最为庞大的战争了，即便此前国际共产联盟不愿承认，但不可否认的是倘若国际解放战争要算上在中东早已持续数年的战火的话总持续时间恐怕不会低于41年，战火对人类集体认知水平的影响是巨大的，这也算引发这次事件的必要条件之一，但令人感到惊讶的还有这些教徒们在冲突之初的文明，根据记录显示他们在最开始时并没有发生明确的大规模冲突，仅是小规模的言语攻击，直到后来才出现了直接的肢体上的冲突。</p>
+
+              </div>
+              <div class="archive-item" data-item="second-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">郊区整改计划</h3>
+                <p class="mb-4">联盟历123年开始正式施行的计划，旨在通过联盟内日益增加的就业需求与迅速发展的科技来尽力解决积病已久的郊区问题，虽然直到计划结束时（联盟历133年）郊区大多通过各种手段安置、清除了许多，但其中也有不少因处理方式不当而残留的区域演变成了小郊区或是黑市，对于这种区域地方政府常常也束手无策。</p>
+              </div>
+              <div class="archive-item" data-item="third-war">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">还权运动</h3>
+                <p>联盟历21年时为了整治政府部门滥用职权、效能低下等问题，由联盟的首任议长解征宸与一众议员一同发起了还权运动，最终这场运动迫使许多部门交出了管辖范围之外的权力，将大部分权力再次返还给联盟议会，这也使得地方议会以及联盟议会不在仅是吉祥物一般的摆设了，而是可以实际发挥效用，做出决策的权力机关，不过在该运动过程中也有个别监察机关躲过了权利交割的风暴，并且其实这场运动更像是重新向政府机关澄明和提醒地方议会的作用与存在，这场运动极大地削弱了地方官员的乱政懒政现象，在50年环境保护计划期间推动了环境保护计划的执行，不过这一举动也最终也在日后为议会暴乱以及执律之殇中地方行政体系表现不力埋下了隐患，并且还权运动极为依靠联盟初期最高统治者的思想觉悟与政治威望和影响力，可以说该事件虽未联盟的后世留下了些许隐患，但总的而言还是帮助联盟在短期内避免了被联盟初期遗留下的联邦残党分裂的可能以及潜在的接班人问题，使得后来联盟历22年时的联盟议长权力交割一事得以在不对联盟造成过大波及的情况下进行，虽说该事件还是因为解征宸议长过大的声望导致权力交割时各方发生纷扰，对联盟政治界造成了诸多影响，但整体依旧并未对联盟各界的平稳造成太大的波及</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 专属名词分类 -->
+          <div class="archive-category">
+            <div class="archive-category-header" data-category="terms">
+              <div class="archive-category-title">联盟专属名词</div>
+              <div class="archive-category-icon">▼</div>
+            </div>
+            <div class="archive-category-content">
+              <div class="archive-item" data-item="coalition-charter">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联盟宪章（CA-0-1-HI-THA）</h3>
+                <p class="mb-4">类似于旧时代的国家宪法或者国际宪章，由最初的联盟议会及政治立法委员会一同通票通过，不过比起旧时代的那些仅能算作约定的东西，这部宪章所具有强制效力还是大的多的，毕竟是有联合军事委员会这种大型军事机构撑腰的，因此其法律地位也算是至高无上了。这是联盟宪章的开篇也是联盟议会议员与议长的宣誓词：“信仰面前人人平等，法律面前人人平等，生命面前众生平等，真理面前人人平等，契约面前人人平等”此为联盟的五个平等，另外联盟宪章也规定了一些政治罪的范围，如分裂主义、资本主义、帝国主义、民族主义、军国主义、法西斯主义、消费主义、恐怖主义、种族主义以及一些极端主义都会被纳入进政治犯罪的范畴，这些犯人往往在被完全改造之前不会获得自己的人身自由权，并且这些政治犯将被联合军事委员会近卫部关押</p>
+              </div>
+              <div class="archive-item" data-item="coalition-calendar">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联盟历（The Coalition Calendar）</h3>
+                <p class="mb-4">一种由联盟议会制定的时间历法，是联盟时代和旧时代的分界线，其元年即为联盟创立的那一年，不过一年的大致时间还是沿用了旧时代的历法，简单来说就是为象征意义而创立的一个和旧时代一模一样的历法制度。</p>
+              </div>
+              <div class="archive-item" data-item="coalition-zoning">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联盟区划（Coalition zoning）</h3>
+                <p class="mb-4">联盟为方便管理而依照民族与经济发展状态而划定的地方区划，一般每一个区划都有其专属名称，每一区划都有专属的地方政府管理，其地方政府又下辖许多小部门，另外联盟区划中的地方政府其实也拥有一定程度上的立法权，能够向联盟议会立法委员会提交拟定仅适用于地方的法案，不过这些法案必须遵守联盟宪章，因此其实即便地方法律已有许多不同的条款出现，但新的由联盟议会拟定的法案也不会在地方实施时发生冲突，同时联盟在地方行政区划下设立省级行政单位与直辖市，使得地方行政更为有效，同时地方也设立有自己的代表大会与地方议会，在日常之余也会对地方法律，行政行为做出联盟议会允许下的适当改动或是建议，可以做到当地事当地断，当地案当地办的效果，大大节省了联盟行政体系在一些旁枝末节上的资源消耗。</p>
+              </div>
+              <div class="archive-item" data-item="coalition-currency">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联盟点（Coalition Currency）</h3>
+                <p class="mb-4">由联盟制定的一种全新货币，受联合宪章保护，是联盟内唯一合法的流通货币，联盟点价值比较固定，如今的100联盟点大概等于1克黄金（这是因为在联盟初期经济体系刚建立时联盟点兑换其他货币的汇率就是由当时该货币买每0.01克黄金的价格），当然这只是估值，并不意味着在联盟内你总能以100联盟点换得1克黄金，也并非所有类型的黄金价格都是如此。</p>
+              </div>
+              <div class="archive-item" data-item="environment issue">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">环境问题</h3>
+                <p class="mb-4">本身国际解放战争前的环境问题就早已岌岌可危了，联盟建立后虽然有所改观，但相较于历史中21世纪的海平面还是有着至少1米左右的提升的，这也是上海长堤以及各地同时出现的不同城市改造计划的原因。</p>
+              </div>
+              <div class="archive-item" data-item="composite-fusion">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">十年复兴计划（D.R.P.|CA-5-13-LTP）</h3>
+                <p>国际解放战争后联盟为促进战后经济发展和社会重建而推出的复兴计划，主要以出台相关政策来帮助，十年复兴计划主要从对联盟社会的重建，经济的复苏与人才的培养出发，对许多高校施以援手，并在各个地区大力推行经济振兴政策，鼓励创业，为新兴企业提供低息甚至免息贷款，为中小企业提供一定比例的税收减免，以激励拉动产业复苏，也通过经济振兴拉动就业，以高就业需求进一步拉动人才培养，由激励拉动供应，进一步提升需求，从而达成良心循环，不断发展的目标，这也是为何联盟初期人才辈出的原因之一，该计划在很大程度上效仿了列宁的新经济政策，同时又因联盟议长在十年复兴计划期间并未经受换届影响，因此这一“新”新经济政策得以存活并实行下来。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 组织/机构/部门分类 -->
+          <div class="archive-category">
+            <div class="archive-category-header" data-category="organizations">
+              <div class="archive-category-title">组织/机构/部门</div>
+              <div class="archive-category-icon">▼</div>
+            </div>
+            <div class="archive-category-content">
+              <div class="archive-item" data-item="council">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联盟[Coalition（Assembly）|行政代码CA]（议会）</h3>
+                <p class="mb-4">经历大规模国际解放战争后为平衡各方利益，合理规划人类资源而成立的一个具有强制效力的组织，其本质就是一个统一了人类的国家，拥有调集全球武装力量，制定全球性法案，管理全球所有地区，统领地区政府的权力，其下辖联合军事委员会，联合政府等大型机构，并且联盟本身也算是一种议会形式的政府，会定期召开关于全球各类事项的会议，共有约3000个参会席位以及约1600个旁听席位最高领导人为联盟议会议长，首任议长为解征宸议长，议会设有常务理事会，由十三名各界精英与固定官员组成，就像执律庭，但不可将执律庭与常务理事会混淆，执律庭成员可担任常务理事会成员，却并不意味着执律庭成员都是常务理事会成员，仍需注意联盟议长及其所领导的常务理事会成员仅有用于其在任期间签署行政命令，发布指导性文件，通过紧急议案和监督议会下属部门的权力，另外除去这些以外议会其实还设有政治立法委员会，又称立法委员会，负责协调有关立法的相关事宜，如审理地方政府拟定的地方法案，向联盟议会提交新修订或制定的法案，通常来说在联盟议会议长选举时使用的选举方式均为等额选举以避免议会需要在两个傻子之间做选择的情况出现，不过仍需注意联盟议会每年召开1-2次，而联盟代表大会召开时则会减少当年议会召开的次数，不过也正如联盟的英文翻译一样，联盟原来只是暂时结成的联合体，但随着还权运动的进行与联盟内部的稳定，联盟也就逐渐成为如今的这幅模样了</p>
+              </div>
+              <div class="archive-item" data-item="research">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">联合政府（Coalition Government|行政代码CG）</h3>
+                <p class="mb-4">:联盟下辖的一个机构，拥有众多部门（如联合经济署，联合医疗署，公共安全署，许多类型的发展规划署和联合太空署等等），除了一些专业部门，联合政府同样也下辖那些地方区划政府，具体架构如下：联合政府办公厅→[地方政府→地方机关]/[联合科研署→科研专利保障署/{科研发展基金会→联合物理研究所}/科研完全督察部]/[联合经济署→中央银行/{经济调查署→(经济支出审查部→预算部/社会保障部/审计部)/(金融部→反垄断调查部)}/{联合税务署→税务督查署→税警}]/[联合医疗署→人口调查署/{医疗保障署→医疗安全督察部}/{医药研发署→医药及食品安全督察署}/疾控中心]/[联合太空署→材料及能源研究所/{联合航天署→在轨卫星/地外勘探基地}]/[联合自然资源署→{自然资源勘探署→考古勘探署/(灾害防治署→自然灾害应急处理署/自然灾害检测部)/地质勘探部/星球资源勘探部}/{联合农业署→矿业开采督察部/(农业生产管理署→渔类捕捞管理署/种植业生产管理署/畜牧养殖管理署)}/{自然资源保护署→环境保护署→环境问题调查署}]/[联合建造管理署→{建筑安全评估部→建造审核部/安全评估部}/违章建筑处理部]/[联合教育科学文化署→{高中标准化统一考核管理署→出题组/监考组/综合成绩评定组}/{教育评估署→教师资格评定部/教材评估审查署/(人才资源探查部→资质评定部)}/教育资助基金会]/[联合交通规划管理署→{公共安全保障署→(航空航天部→航线规划部/航空运输保障部/泊板管理部)/(铁路运输部→地下铁路运输及保障部/铁路运输规划及保障部)/航运安全保障部}/{运输审查部→大件货物运输保障部/海运审查部/空天运输审查部/陆运长途审查部}/{道路规划部→泊点规划部}]/[联合政府新闻宣传部→新闻公关组/新闻发布筹备组]/[公共安全署→恐怖袭击应急反应部/{公安部→(警察部门→巡警/民警/交警)/刑警/(特种警察→网络安全警察/太空巡警)/(武装警察部队→快速反应部队/消防部队)}]。</p>
+              </div>
+              <div class="archive-item" data-item="trade">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">十三执律</h3>
+                <p>联盟议会虽是由无数议员组成的，但其中话语权最大的还得是代表联盟内8大基础行业（科研、法律，医疗、建设、教育、农业、交通、商业）和5大组织（律师协会、联合仲裁庭、联盟商会、斯莱塔拉大学、拉塞尔大学）的13名执律者（只是代表，不一定是组织或行业中的领导者）组成的十三执律，他们代表着联盟内毋庸置疑的权力顶点，由他们组成的执律庭（Judicatory Council|行政代码JC）如同议会中的内阁一般，时常凌驾于议会之上，拥有对议案的提出与否决权，一般来说只要有至少三位执律者投出否决票该议案就会直接被弃置，无论赞成票的占比，而执律者一词意为能够执掌一个行业或组织运行和发展规律的人，这也是执律者们之所以拥有那么大权力的原因，换句话说正是因为他们本就拥有改变联盟的能力才能成为执律者的，但此处需注意执律庭内部也有自己的规则，如执律者中每年都需选出一到三位常务执律以处理执律庭日常事项与紧急情况，当然这其中具体是由受排挤的人当还是位高权重的人当就不得而知了，另外执律庭中同样有过年龄限制，虽被废除过一段时间，但如今又被再次启动，目的无非就是为了防止重蹈执律之殇的覆辙，在享有如此之大的权力的同时执律者们也无时无刻被外界所注意着因此执律庭对执律者出行计划的保密程度相当之高，甚至一度达到过LEVEL Ⅷ，可以说已经比大部分的机密保密等级还要高了，另外如今的执律者也不只是行业内的领军人物了（因为反垄断法案），因此多数时候执律者来自于行业内部组成的会议体系投票选择。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右侧内容展示区 -->
+      <div class="hidden md:block md:w-4/5 pl-12 sticky top-128 h-full">
+        <div id="archive-detail" class="bg-gray-800 bg-opacity-50 rounded-xl p-6 h-full flex flex-col items-center justify-center">
+          <div id="archive-default" class="text-center">
+            <div class="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-purple-300 opacity-30 mb-4">SPARK</div>
+            <p class="text-gray-500">点击左侧词条查看详细内容</p>
+          </div>
+          <div id="archive-content" class="hidden w-full">
+            <h3 id="archive-title" class="text-2xl font-bold mb-4 text-purple-400"></h3>
+            <div id="archive-text" class="mb-6"></div>
+            <div id="archive-image" class="rounded-xl overflow-hidden shadow-lg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 新作预告 - 简化版 -->
+  <section id="upcoming" class="section">
+    <div class="section-top-decoration"></div>
+    <div class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-300 section-title">新作预告</h2>
+      <div class="upcoming-carousel relative max-w-4xl mx-auto">
+        <div class="carousel-container overflow-hidden relative">
+          <div class="carousel-track flex transition-transform duration-500 ease-in-out">
+            <!-- 预告1 -->
+            <div class="carousel-slide w-full flex-shrink-0 bg-gray-800 bg-opacity-50 rounded-xl p-6 shadow-lg">
+              <h3 class="text-2xl font-bold mb-4 text-purple-400">《火花》系列小说</h3>
+              <p class="mb-4">当我们正式开始以人物传记的视角审视整个联盟的细微之处时，您或许应该准备好更新您对联盟的认识</p>
+              <div class="flex items-center text-sm text-gray-400">
+                <span>预计发布日期：2025年6月27日</span>
+              </div>
+              <div class="mt-4">
+                <img src="https://img.picui.cn/free/2025/06/01/683c75de9a287.png" alt="屏幕截图 2025-03-22 220332.png" title="屏幕截图 2025-03-22 220332.png" />
+              </div>
+            </div>
+            <!-- 预告2 -->
+            <div class="carousel-slide w-full flex-shrink-0 bg-gray-800 bg-opacity-50 rounded-xl p-6 shadow-lg">
+              <h3 class="text-2xl font-bold mb-4 text-purple-400">《渊蚀症》</h3>
+              <p class="mb-4">这是一个不符合唯物思想的故事，究竟是幻想还是现实？当你凝视魔渊时，它或许会给你答案</p>
+              <div class="flex items-center text-sm text-gray-400">
+                <span>预计发布日期：2027年</span>
+              </div>
+              <div class="mt-4">
+                <img src="https://img.picui.cn/free/2025/05/23/683087140549d.png" alt="屏幕截图 2025-03-22 220332.png" title="屏幕截图 2025-03-22 220332.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 导航按钮 -->
+        <button class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 hover:bg-opacity-90 rounded-full w-10 h-10 flex items-center justify-center text-xl shadow-lg transition-all duration-300">
+          &larr;
+        </button>
+        <button class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 hover:bg-opacity-90 rounded-full w-10 h-10 flex items-center justify-center text-xl shadow-lg transition-all duration-300">
+          &rarr;
+        </button>
+      </div>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="contact" class="section">
+    <div class="section-top-decoration"></div>
+    <div class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-300 section-title">关于我们</h2>
+      <div class="max-w-3xl mx-auto text-container">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-purple-400">我们的团队</h3>
+            <p class="mb-6">火花宇宙由一群热爱幻想和专业知识的学生组成，包括计算机爱好者，地理爱好者和科幻爱好者。</p>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <span class="text-blue-400"></span>
+                <span>代码撰写：Idad Wind,George Wu</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-blue-400"></span>
+                <span>运营：Salt</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-blue-400"></span>
+                <span>小说作者：William Qing,David Chen,Daniel Yang</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-purple-400">加入我们</h3>
+            <p class="mb-4">如果您对火花宇宙充满期望与欣赏，欢迎查看我们的团队和官方账号。</p>
+            <div class="mt-6">
+              <img src="https://img.picui.cn/free/2025/05/23/68308586dccad.png" alt="微信图片_20250523222524.png" title="微信图片_20250523222524.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 社交媒体区域 -->
+  <section id="social" class="section bg-gray-800 bg-opacity-50">
+    <div class="section-top-decoration"></div>
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-300 section-title">更多</h2>
+      <div class="flex justify-center space-x-8 md:space-x-12">
+
+        <a href="https://space.bilibili.com/265276181?spm_id_from=333.1387.follow.user_card.click" target="_blank" class="social-icon hover:text-purple-400 transition-all duration-300 transform hover:scale-110">
+          <i class="fab fa-bilibili text-4xl md:text-5xl"></i>
+        </a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk4ODIwMzY3OQ==IDwechat_redirect
+" target="_blank" class="social-icon hover:text-red-400 transition-all duration-300 transform hover:scale-110">
+          <i class="fab fa-youtube text-4xl md:text-5xl"></i>
+        </a>
+
+        <a href="https://github.com" target="_blank" class="social-icon hover:text-gray-200 transition-all duration-300 transform hover:scale-110">
+          <i class="fab fa-github text-4xl md:text-5xl"></i>
+        </a>
+      </div>
+      <p class="text-center mt-8 text-gray-400">关注我们的社交媒体账号，获取最新动态</p>
+    </div>
+    <div class="section-bottom-decoration"></div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-gray-800 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">SPARK</span>
+          <p class="text-gray-400 mt-2">© 2025 火花宇宙 版权所有</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition">隐私政策</a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition">使用条款</a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition">常见问题</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 粒子特效 -->
+  <div id="particles-js"></div>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // 初始化粒子特效
+    document.addEventListener('DOMContentLoaded', function() {
+      particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#4a80f0"
+          },
+          shape: {
+            type: "circle"
+          },
+          opacity: {
+            value: 0.5,
+            random: true
+          },
+          size: {
+            value: 3,
+            random: true
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#4a80f0",
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out"
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab"
+            },
+            onclick: {
+              enable: true,
+              mode: "push"
+            }
+          }
+        }
+      });
+      // 下箭头点击事件
+      document.getElementById('scroll-down-arrow').addEventListener('click', function() {
+        document.getElementById('about').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
